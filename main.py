@@ -184,4 +184,4 @@ def edit(sno):
         post = Posts.query.filter_by(sno=sno).first()
         return render_template('edit.html', params = params,post = post,sno=sno )
 
-app.run(debug=False , host = '0.0.0.0')
+app.run(debug=True)
